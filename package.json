@@ -1,0 +1,18 @@
+{
+  "name": "waffleiron-cms",
+  "version": "1.0.0",
+  "description": "cms with live edit, flexible fields, custom fields. built with express + htmx + alpinejs + tailwind + sqlite",
+  "author": "waffles",
+  "license": "ISC",
+  "workspaces": [
+    "packages/server",
+    "packages/client",
+    "packages/themes/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm --workspace server start\" \"npm --workspace client run dev\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
