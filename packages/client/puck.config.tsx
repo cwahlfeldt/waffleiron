@@ -1,7 +1,7 @@
 import type { Config } from "@measured/puck";
 
 type Props = {
-  HeadingBlock: { title: string, text: string };
+  HeadingBlock: { title: string };
 };
 
 export const config: Config<Props> = {
@@ -9,16 +9,13 @@ export const config: Config<Props> = {
     HeadingBlock: {
       fields: {
         title: { type: "text" },
-        text: { type: "textarea" }
       },
       defaultProps: {
         title: "Heading",
-        text: "Text"
       },
-      render: (data) => (
+      render: ({ title }) => (
         <div style={{ padding: 64 }}>
-          <h1>{data.title}</h1>
-          <p>{data.text}</p>
+          <h1>{title}</h1>
         </div>
       ),
     },

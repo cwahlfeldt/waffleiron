@@ -4,6 +4,7 @@
   "description": "cms with live edit, flexible fields, custom fields. built with express + htmx + alpinejs + tailwind + sqlite",
   "author": "waffles",
   "license": "ISC",
+  "packageManager": "npm",
   "workspaces": [
     "packages/server",
     "packages/client",
