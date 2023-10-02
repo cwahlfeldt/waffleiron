@@ -5,14 +5,12 @@
   "private": true,
   "author": "waffles",
   "license": "ISC",
-  "packageManager": "npm",
+  "packageManager": "yarn",
   "workspaces": [
-    "packages/client",
-    "packages/server",
-    "packages/theme"
+    "waffleiron/*"
   ],
   "scripts": {
-    "dev": "concurrently \"yarn workspace client dev\" \"yarn workspace theme dev\""
+    "dev": "yarn workspace client dev"
   },
   "dependencies": {
     "concurrently": "^8.2.1"
